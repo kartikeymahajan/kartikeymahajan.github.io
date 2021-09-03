@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Simple Login Page </title>
+		<style>
+
+				
+				
+				form {
+					margin-right: 300px;
+					margin-left: 300px;
+					padding: 10px;
+					background-image: url('https://cdn.pixabay.com/photo/2016/02/23/07/37/wall-1217083_960_720.jpg');
+					text-align: center;
+					border: 5px solid black;
+					border-radius: 15px;
+					font-size: 20px;
+					font-family: "Times New Roman", Times, serif;
+
+
+				}
+
+
+		</style>
+	</head>
+
+	<body>
+			<form>
+
+				<div>
+			    	<img src="C:\Users\LENOVO\Desktop\UI Developer\html\simple form\avtar.png" height="150px" width="150px">
+			  	</div>
+
+		
+				<div>
+				<label for="fname"> First Name: </label> <br>
+				<input type="text" id="fname" name="fname" placeholder="Name"><br>
+
+				<label for="lname">   Last Name: </label> <br>
+				<input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+
+				<label for="password">   Password: </label> <br>
+				<input type="password" id="password" name="password" placeholder="password"><br>
+
+			
+				<h5>Please Select your Gender</h5>
+				<input type="radio" name="gender" value="male" checked>Male 
+				<input type="radio" name="gender" value="female" checked>Female <br><br>
+
+				<label for="age">Select Age</label>
+				  <select name="age" id="age">
+				    <option value="21 to 30">21 to 30</option>
+				    <option value="31 to 40">31 to 40</option>
+				    <option value="41 to 50">41 to 50</option>
+				    <option value="51 to 60">51 to 60</option>
+				  </select>
+				  <br><br>
+
+				<input type="checkbox" checked="checked" name="remember"> Agree<br><br>
+
+				<button type="button" onclick="alert('Registration Successful')"><b>Submit</b></button><br><br>
+
+
+				<b>Please rate our site..</b><br>
+				Very Bad<input type="range" name="points" list="tickmarks" min="0" max="5"> 
+				<datalist id="tickmarks">
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+
+
+				</datalist>
+				Very Good
+				</div>
+
+
+			</form>
+	</body>
+
+</html>
