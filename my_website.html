@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>The Golden Era Restarant</title>
+		<style>
+			*{
+				font-family: cursive;
+
+			}
+
+			html {
+ 				scroll-behavior: smooth;
+				
+			}
+
+
+			div.a{
+				height: 100px;
+				width: 100%;
+				position: sticky;
+				top: 0;
+				background-color: white;
+
+			}
+
+			/* spans for div class "a" */
+
+			span.logo{
+				display: inline-block;
+				vertical-align: top;
+
+			}
+
+			span.menuBar{
+	
+				display: inline-block;
+				margin-left: ;
+				height: 70px;
+				width: 75%;
+				margin-top: 20px;
+				padding-left: 0px;
+				background-color: white;
+				
+
+			}
+
+			.menuList{
+
+				display: inline;
+				margin-left:1.5%;
+				font-size: 20px;
+				font-weight: bold;
+				color: #212F3D;
+				text-decoration: none;
+
+			}
+
+			.menuList:hover{
+				color:#5D6D7E ;
+				cursor: pointer;
+
+			}
+
+			span.login{
+				display: inline-block;
+				margin-left: 2%;
+				height: 100%;
+				width: 8%;
+				vertical-align: top;
+
+			}
+
+			.signInButton{
+
+			    height: 37px;
+			    width: 95%;
+			    background: #34495E ;
+			    outline: none;
+			    border: none;
+			    border-radius: 5px;
+			    color: #fff;
+			    font-size: 19px;
+			    font-weight: bolder;
+			    cursor: pointer;
+			    margin-top: 28%;
+
+			}
+
+			.signInButton:hover{
+				font-size: 22px;
+
+			}
+
+
+			div.b{
+				height:650px;
+				width: 100%;
+				padding-top: 2%;
+				margin-top: 1%;
+				background-image: url('main_image.jpg');
+				background-size: 100% 100%;
+
+			}
+
+			.searchBox{
+				padding: 5px;
+				font-size: 20px;
+				float: left;
+				width: 30%;
+				background: transparent;
+				border: 2px solid #CCD1D1  ;
+				border-radius: 15px;
+				margin-left: 33%;
+				color: red;
+				text-align: center;
+
+
+
+				}
+
+			.searchButton{
+		
+				width: 5%;
+				height: 20px;
+				margin-left: 3px;
+				height:40px;
+				padding: 3.6px;
+				border: 1px solid black;
+				cursor: pointer;
+				background: transparent;
+				border: 2px solid #CCD1D1 ;
+				border-radius: 15px;
+
+
+				}
+
+			.searchButton:hover{
+
+				font-size: 20px;
+
+				}
+
+
+			div.c{
+				height: 580px;
+				width: 100%;
+				margin-top: 10px;
+				background-image: url('menu.jpg');
+				background-size: 100% 100%;
+
+			}
+
+			/* spans for div class "c" */
+
+			span.a{
+			
+				height: 500px;
+				width: 200px;
+				display: inline-block;
+				margin-top: 40px;
+				margin-left: 40px;
+				line-height: 43px;
+				border-radius: 10px;
+
+			}
+
+			.categoryList{
+				text-decoration: none;
+				color: #CD6155;
+
+			}
+			.categoryList:hover{
+				font-size:20px;
+				color: #17202A
+
+
+			}
+
+			span.b{
+				height: 500px;
+				width: 1000px;
+				display: inline-block;
+				margin-top: 40px;
+				margin-left: 40px;
+				margin-right: px;
+				vertical-align: top;
+
+			}
+
+			span.c{
+				height: 180px;
+				width: 180px;
+				display: inline-block;
+				margin:  30px;
+				margin-right: px;
+				vertical-align: top;
+			}
+
+			span.c:hover{
+				border: 5px solid black;
+
+			}
+
+			h5{
+
+				text-align: center;
+				font-weight: bold;
+				margin-top: 85%;
+				font-size: 18px;
+				color: white;
+
+			}
+
+			div.d{
+				height: 670px;
+				width: 100%;
+				margin-top: 5px;
+				background-image: url('aboutUsBG.jpg');
+				background-size: 100% 100%;
+				border: 2px solid #F2D7D5;
+				color: white;
+
+			}
+
+			h1{
+				font-size: 40px;
+				font-weight: bold;
+				text-align: center;
+
+			}
+
+			span.aboutUsFirst{
+				height: 74%;
+				width: 25%;
+				display: inline-block;
+				vertical-align: top;
+				margin-left: 10%;
+				margin-top: 1%;
+				border-radius: 5px;
+				border: 2px solid white;
+
+			}
+
+			span.aboutUsSecond{
+				height: 60%;
+				width: 50%;
+				display: inline-block;
+				vertical-align: top;
+				margin-left: 7%;
+				margin-top: 4%;
+				padding: 10px;
+
+
+			}
+
+			p.aboutUs{
+				font-size: 23px;
+				line-height: 32px;
+				font-family: cursive;
+				text-align: center;
+
+			}
+
+			div.location{
+				height: 670px;
+				width: 100%;
+				color: white;
+				margin-top: 10px;
+				line-height: 10px;
+				padding-top: 20px;
+				background-image: url('location.jpg');
+				background-size: 100% 100%;
+
+			}
+
+			h2{
+				font-weight: bold;
+				text-align: center;
+				font-size: 22px;
+
+			}
+
+			span.map{
+				height: 67%;
+				width: 35%;
+				display: inline-block;
+				margin-left: 11%;
+				margin-top: 2%;
+
+			}
+
+			span.address{
+				height: 60%;
+				width: 30%;		
+				display: inline-block;
+				margin-left: 12%;
+				margin-top: 5%;
+				vertical-align: top;
+				line-height: 40px;
+				font-size: 30px;
+				text-align: center;
+
+			}
+
+			div.feedback{
+				height: 300px;
+				width: 100%;
+				background-color: #F8C471 ;
+				margin-top: 1%;
+				line-height: 5px;
+				padding-top: 9px;
+
+			}
+
+			h3.starRating{
+				font-size: 50px;
+				text-align: center;
+			}
+
+			h3.starRating:hover{
+				color: red;
+
+			}
+
+			input{
+				height: 20%;
+				width: 50%;
+				margin-left: 25%;
+				text-align: center;
+				border-radius: 5px;
+				background: transparent;
+				box-shadow: 1px 1px 5px 5px  #ccc;
+
+			}
+
+			.feedbackSubmitButton{
+				height: 13%;
+				width: 10%;
+				margin-left: 45%;
+				margin-top: 1%;
+				background-color:  #F39C12  ;
+				color: black ;
+				font-weight: bold;
+				padding: 1px 5px;
+				font-size: 20px;
+				border: 1px solid black;
+				border-radius: 5px;
+				cursor: pointer;
+
+			}
+
+			.feedbackSubmitButton:hover{
+				font-size: 22px;
+
+			}
+
+
+			div.footer{
+				height: 70px;
+				width: 100%;
+				background-color: #273746;
+				color: white;
+				margin-top: 1%;
+			}
+
+			span.footerFirst{
+				height: 80%;
+				width: 40%;
+				display: inline-block;
+				vertical-align: top;
+				margin-left: 5%;
+				margin-top: 0.6%;
+
+			}
+			span.footerSecond{
+				height: 80%;
+				width: 25%;
+				display: inline-block;
+				margin-left: 28%;
+				margin-top: 0.6%;
+
+			}
+
+			.fa {
+				padding: 10px 5px;
+				font-size: 20px;
+				width: 30px;
+				height: 21px;
+				text-align: center;
+				text-decoration: none;
+				margin: 5px 2px;
+				border: 1px solid white;
+				border-radius: 50px;
+			}
+
+			.fa:hover {
+			    opacity: 0.7;
+			}
+
+
+			.fa-facebook {
+			  background: #3B5998;
+			  color: white;
+			}
+
+			.fa-twitter {
+			  background: #55ACEE;
+			  color: white;
+			}
+
+			.fa-linkedin {
+			  background: #007bb5;
+			  color: white;
+			}
+
+			.fa-youtube {
+			  background: #bb0000;
+			  color: white;
+			}
+
+			.fa-instagram {
+			  background: #125688;
+			  color: white;
+			}
+
+			.fa-pinterest {
+			  background: #cb2027;
+			  color: white;
+			}
+
+			
+			
+		</style>
+
+	</head>
+
+	<body style="background-color: #ccc;">
+
+		<div class="a">
+
+			<span class="logo"><img src="C:\Users\LENOVO\Desktop\UI Developer\html\My_Website\logos.jpg" height="100px" width="150px"></span>
+
+			<span class="menuBar">
+
+				<ul>
+					<li class="menuList"><a href="#main" class="menuList"> Home</a></li>
+					<li class="menuList"><a href="#aboutUs" class="menuList"> About Us</a></li>
+					<li class="menuList"><a href="#menu" class="menuList"> Our Menu</a></li>
+					<li class="menuList"><a href="" class="menuList"> Photo Gallery</a></li>
+					<li class="menuList"><a href="" class="menuList"> Order Online</a></li>
+					<li class="menuList"><a href="" class="menuList"> Reservations</a></li>
+					<li class="menuList"><a href="#location" class="menuList"> Contact Us</a></li>
+
+				</ul>
+
+
+			</span>
+
+			<span class="login">
+
+				<button class="signInButton">Log In</button>
+
+			</span>
+
+		</div>
+
+		<div class="b" id="main">
+			<form>
+			  <input class="searchBox" type="text" placeholder="Search.." name="search">
+			  <button class="searchButton" type="submit">&#128269;</button>
+			</form>
+
+
+		</div>
+
+			
+		<div class="c" id="menu">
+
+			<span class="a" >
+
+				<h2>Food By Category</h2>
+
+				<ul>
+
+					<li><a href="#" class="categoryList">Recommended</a></li>
+					<li><a href="#" class="categoryList">Sizzlers</a></li>
+					<li><a href="#" class="categoryList">Soups </a></li>
+					<li><a href="#" class="categoryList">Starters </a></li>
+					<li><a href="#" class="categoryList">Main Course </a></li>
+					<li><a href="#" class="categoryList">Breads</a></li>
+					<li><a href="#" class="categoryList">Rice And Biryani</a></li>
+					<li><a href="#" class="categoryList">Chinese</a></li>
+					<li><a href="#" class="categoryList">Desserts</a></li>
+
+				</ul>
+
+			</span>
+
+			<span class="b">
+				<span class="c" style="background-image: url('https://www.outlookindia.com/outlooktraveller/public/uploads/filemanager/images/misal-pav.jpg'); background-size: 100% 100%;"><h5>Maharashtra</h5></span>
+				<span class="c" style="background-image: url('https://www.outlookindia.com/outlooktraveller/public/uploads/filemanager/images/makki-de-roti.jpg'); background-size: 100% 100%;"><h5>Punjab</h5></span>
+				<span class="c" style="background-image: url('https://www.outlookindia.com/outlooktraveller/public/uploads/filemanager/images/kosha-mangsho_5d3036c936254.jpg'); background-size: 100% 100%;"><h5>West Bengal</h5></span>
+				<span class="c" style="background-image: url('https://www.outlookindia.com/outlooktraveller/public/uploads/filemanager/images/dhokla.jpg'); background-size: 100% 100%;"><h5>Gujarat</h5></span>
+				<span class="c" style="background-image: url('https://www.outlookindia.com/outlooktraveller/public/uploads/filemanager/images/rogan-josh_5d3037b27b7b4.jpg'); background-size: 100% 100%;"><h5>Kashmir</h5></span>
+				<span class="c" style="background-image: url('https://www.outlookindia.com/outlooktraveller/public/uploads/filemanager/images/pongal.jpg'); background-size: 100% 100%;"><h5>Tamil Nadu</h5></span>
+				<span class="c" style="background-image: url('https://www.outlookindia.com/outlooktraveller/public/uploads/filemanager/images/litti-chowkha.jpg'); background-size: 100% 100%;"><h5>Bihar</h5></span>
+				<span class="c" style="background-image: url('https://www.outlookindia.com/outlooktraveller/public/uploads/filemanager/images/papaya-khar.jpg'); background-size: 100% 100%;"><h5>Assam</h5></span>
+
+			</span>
+
+		</div>
+
+
+		<div class="d" id="aboutUs">
+
+			<h1 class="aboutUs">About Us</h1>
+
+			<span class="aboutUsFirst">
+				<img src="C:\Users\LENOVO\Desktop\UI Developer\html\My_Website\aboutUs.jpg" height="100%" width="100%">
+
+			</span>
+
+			<span class="aboutUsSecond">
+
+				<p class="aboutUs">Here at The Golden Era, we believe that food is a celebration of life and that traditional foods are an enduring part of our culture. Family owned and operated, we challenge ourselves everyday to live up to our name by preparing and serving traditional, Indian home style meals with devotion, elegance, and grace. Each of us has special memories of home-made-food - the kind that keeps us longing for it when we are away from home. Capturing this authentic flavor has become a critical undertaking for our restarant and we are proud to continue to cook traditional meals from recipes perfected from over thousands of years.</p>
+
+			</span>
+
+
+		</div>
+
+		<div class="location" id="location">
+
+			<h1>Location</h1><br>
+			<h2>Visit Us Right Now!</h2><br>
+
+			<span class="map">
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.999071841213!2d75.88795219730831!3d22.765415719389903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396302b095ac2aa1%3A0x10b56b1834aee73e!2sThe%20Golden%20Era!5e0!3m2!1sen!2sin!4v1631000051546!5m2!1sen!2sin" width="100%" height="100%" style="border:2px solid white; border-radius: 100%;" allowfullscreen="" loading="lazy"></iframe>
+
+			</span>
+			
+
+			<span class="address">
+				<p>114,<br> Main Rd, Sector A,<br> Slice 2, Aranya Nagar, <br>Vijay Nagar, Indore, <br>Madhya Pradesh - 452010 <br> Phone- 02583 22535 <br>Email - support@goldenera.com</p>
+
+
+			</span>
+
+		</div>
+
+		<div class="feedback">
+
+				<h2>Please give Valuable Feedback</h2><br>
+				<h3 class="starRating">✩ ✩ ✩ ✩ ✩</h3><br>
+
+				<input type="text" id="email" name="email" placeholder="Any Message / Suggestions / Qyery" required /><br><br>
+
+				<button class="feedbackSubmitButton" type="submit">Submit</button>
+			
+			</div>
+
+			<div class="footer">
+
+				<span class="footerFirst">
+
+					<p>Copyright &#169;2021 The Golden Era. All Rights Reserved</p>
+
+				</span>
+
+				<span class="footerSecond">
+
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-linkedin"></a>
+					<a href="#" class="fa fa-youtube"></a>
+					<a href="#" class="fa fa-instagram"></a>
+					<a href="#" class="fa fa-pinterest"></a>
+
+				</span>
+
+
+			</div>
+
+
+		</div>
+
+
+	</body>
+
+</html>
